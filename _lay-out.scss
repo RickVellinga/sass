@@ -1,0 +1,33 @@
+body{
+  font-family: $mijnFont;
+}
+
+.logo{
+  background-color: $tweedekleur;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: .5em;
+  color: darken($tweedekleur, 40);
+}
+.container{
+  position: relative;
+  left: 0;
+  transition: left .6s ease-in-out;
+
+}
+main{
+  padding: 0 2em;
+}
+
+section{
+  color: $tweedekleurdonker;
+  h2{
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  @import 'main-desktop';
+}
